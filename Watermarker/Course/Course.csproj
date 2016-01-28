@@ -86,12 +86,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\Downloads\FileBrowser_src\FileBrowser\FileBrowser.csproj">
-      <Project>{FC8064DF-B0BC-4D03-B1AE-077F3387412C}</Project>
-      <Name>FileBrowser</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

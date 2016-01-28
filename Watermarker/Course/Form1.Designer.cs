@@ -30,7 +30,6 @@
         {
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.templateImageSelector = new Course.ImageSelector();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
@@ -39,6 +38,7 @@
             this.waterMarkTextBox = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.templateImageSelector = new Course.ImageSelector();
             this.panel1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -66,17 +66,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(642, 291);
             this.panel1.TabIndex = 1;
-            // 
-            // templateImageSelector
-            // 
-            this.templateImageSelector.Checked = false;
-            this.templateImageSelector.Image = null;
-            this.templateImageSelector.Location = new System.Drawing.Point(3, 3);
-            this.templateImageSelector.Name = "templateImageSelector";
-            this.templateImageSelector.Size = new System.Drawing.Size(150, 150);
-            this.templateImageSelector.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.templateImageSelector.TabIndex = 1;
-            this.templateImageSelector.Visible = false;
             // 
             // button2
             // 
@@ -152,6 +141,17 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "Текст водяного знака:";
             // 
+            // templateImageSelector
+            // 
+            this.templateImageSelector.Checked = false;
+            this.templateImageSelector.Image = null;
+            this.templateImageSelector.Location = new System.Drawing.Point(3, 3);
+            this.templateImageSelector.Name = "templateImageSelector";
+            this.templateImageSelector.Size = new System.Drawing.Size(150, 150);
+            this.templateImageSelector.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.templateImageSelector.TabIndex = 1;
+            this.templateImageSelector.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -166,7 +166,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Проставка водяного знака";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResizeEnd += new System.EventHandler(this.Form1_ResizeEnd);
             this.Resize += new System.EventHandler(this.Form1_Resize);

@@ -236,13 +236,18 @@ namespace Course
             {
                 SizeF textSize = g.MeasureString(waterMarkTextBox.Text, saver.Font); //Считаем, какая высота и ширина будет у нашего водяного знака
                 SolidBrush semiTransBrush = new SolidBrush(Color.FromArgb(128, 0, 0, 0)); //Инициализируем кисть, которой будет рисоваться водяной знак. Кисть делаем полупрозрачной.
-                for (float w = 0; w < saver.Image.Width; w += textSize.Width) //Проходимся по ширине картинки с шагом в ширину водяного знака
+                /* for (float w = 0; w < saver.Image.Width; w += textSize.Width) //Проходимся по ширине картинки с шагом в ширину водяного знака
                 {
                     for (float h = 0; h < saver.Image.Height; h += textSize.Height) //Проходимся по высоте картинки с шагом в высоту водяного знака
                     {
                         g.DrawString(waterMarkTextBox.Text, saver.Font, semiTransBrush, new PointF(w, h)); //Рисуем поверх картинки водяной знак
                     }
                 }
+                 */
+
+                float w = saver.Image.Width / 2 - textSize.Width / 2;
+                float h = saver.Image.Height - textSize.Height - 5;
+                g.DrawString(waterMarkTextBox.Text, saver.Font, semiTransBrush, new PointF(w, h));
 
                 try //Пробуем сохранить картинку
                 { 
